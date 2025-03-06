@@ -548,7 +548,7 @@ static GOOD_OR_BAD GetHostURL( struct OutputControl * oc )
 {
 	FILE * out = oc->out ;
 	char * line = NULL ;
-	static regex_t rx_host ;
+	regex_t rx_host ;
 	struct ow_regmatch orm ;
 	
 	orm.number = 1 ;	
