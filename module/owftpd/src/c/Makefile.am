@@ -10,8 +10,8 @@ owftpd_SOURCES = file_list.c \
                  daemon_assert.c
 owftpd_DEPENDENCIES = ../../../owlib/src/c/libow.la
 
-AM_CFLAGS = -I../include \
-	-I../../../owlib/src/include \
+AM_CFLAGS = -I$(srcdir)/../include \
+	-I$(srcdir)/../../../owlib/src/include \
 	-L../../../owlib/src/c \
 	-fexceptions \
 	-Wall \

@@ -2,7 +2,7 @@ bin_PROGRAMS = owfs
 owfs_SOURCES = owfs.c owfs_callback.c fuse_line.c
 owfs_DEPENDENCIES = ../../../owlib/src/c/libow.la
 
-AM_CFLAGS = -I../include \
+AM_CFLAGS = -I$(srcdir)/../include \
 	${FUSE_FLAGS} \
 	${FUSE_INCLUDES} \
 	-I../../../owlib/src/include \
